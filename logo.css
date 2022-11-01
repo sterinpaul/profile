@@ -1,0 +1,165 @@
+body{
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    perspective: 15em;
+    perspective-origin: 50% 50%;
+}
+.scene{
+    position:relative;
+    transform-style: preserve-3d;
+    transform:rotateY(-60deg);
+    animation: sceneRotate 7s infinite linear alternate;
+}
+@keyframes sceneRotate {
+    to{transform:rotateY(60deg);}
+}
+.floor{
+    width: 25em;
+    height: 25em;
+    position: absolute;
+    top:6.5em;
+    background-image: radial-gradient(rgb(208, 198, 198) 5%,rgb(0, 0, 0) 70%) ;
+    transform:translate(-50%,-50%)rotateX(90deg);
+}
+.container{
+    transform-style: preserve-3d;
+    display:flex;
+}
+.shapeShadow{
+    width:8em;
+    height:1em;
+    position: absolute;
+    box-shadow: 0em 5em 3em 1em rgb(77, 76, 76);
+    border-radius: 30%;
+    top:-3.4em;
+    transform:translateX(-3.5em) translateZ(-5em) translateY(9.35em) rotateX(90deg);
+}
+.front,.back{
+    position:absolute;
+    color: rgb(255, 19, 19);
+    font-size: 15em;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left:-3rem;
+    bottom:-5.5rem;
+    text-shadow: 0px 0 5px rgb(213, 45, 45);
+}
+.back{
+    transform:translateZ(.29rem);
+}
+.front::before,.back::before{
+    content: "";
+    position: absolute;
+    width:.1em;
+    height:1.35em;
+    top:-.09em;
+    left:.19em;
+    background-color: rgb(255, 0, 0);
+    transform: rotate(26deg);
+    box-shadow: 0px 0 5px rgb(213, 45, 45);
+}
+.two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen, .nineteen, .twenty, .twentyone, .twentytwo, .twentythree, .twentyfour, .twentyfive, .twentysix, .twentyseven, .twentyeight, .twentynine{
+    position:absolute;
+    color: rgb(91, 30, 30);
+    font-size: 15em;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    bottom:-5.5rem;
+    left:-3rem;
+    text-shadow: 0 0 .01rem rgb(160, 56, 56);
+}
+.two::before, .three::before, .four::before, .five::before, .six::before, .seven::before, .eight::before, .nine::before, .ten::before, .eleven::before, .twelve::before, .thirteen::before, .fourteen::before, .fifteen::before, .sixteen::before, .seventeen::before, .eighteen::before, .nineteen::before, .twenty::before, .twentyone::before, .twentytwo::before, .twentythree::before, .twentyfour::before, .twentyfive::before, .twentysix::before, .twentyseven::before, .twentyeight::before, .twentynine::before{
+    content: "";
+    position: absolute;
+    width:.1em;
+    height:1.35em;
+    top:-.09em;
+    left:.19em;
+    background-color: rgb(91, 30, 30);
+    transform: rotate(26deg);
+}
+.two{
+    transform:translateZ(.01rem);
+}
+.three{
+    transform:translateZ(.02rem);
+}
+.four{
+    transform:translateZ(.03rem);
+}
+.five{
+    transform:translateZ(.04rem);
+}
+.six{
+    transform:translateZ(.05rem);
+}
+.seven{
+    transform:translateZ(.06rem);
+}
+.eight{
+    transform:translateZ(.07rem);
+}
+.nine{
+    transform:translateZ(.08rem);
+}
+.ten{
+    transform:translateZ(.09rem);
+}
+.eleven{
+    transform:translateZ(.1rem);
+}
+.twelve{
+    transform:translateZ(.11rem);
+}
+.thirteen{
+    transform:translateZ(.12rem);
+}
+.fourteen{
+    transform:translateZ(.13rem);
+}
+.fifteen{
+    transform:translateZ(.14rem);
+}
+.sixteen{
+    transform:translateZ(.15rem);
+}
+.seventeen{
+    transform:translateZ(.16rem);
+}
+.eighteen{
+    transform:translateZ(.17rem);
+}
+.nineteen{
+    transform:translateZ(.18rem);
+}
+.twenty{
+    transform:translateZ(.19rem);
+}
+.twentyone{
+    transform:translateZ(.2rem);
+}
+.twentytwo{
+    transform:translateZ(.21rem);
+}
+.twentythree{
+    transform:translateZ(.22rem);
+}
+.twentyfour{
+    transform:translateZ(.23rem);
+}
+.twentyfive{
+    transform:translateZ(.24rem);
+}
+.twentysix{
+    transform:translateZ(.25rem);
+}
+.twentyseven{
+    transform:translateZ(.26rem);
+}
+.twentyeight{
+    transform:translateZ(.27rem);
+}
+.twentynine{
+    transform:translateZ(.28rem);
+}
