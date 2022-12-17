@@ -367,8 +367,11 @@ body{
 
 /* Projects */
 
-#project-heading ul{
+#project-heading{
     margin-top: 5rem;
+}
+
+#project-heading ul{
     font-size: 2.5rem;
     font-weight: bolder;
     list-style: none;
